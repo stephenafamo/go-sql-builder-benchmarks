@@ -8,7 +8,7 @@ import (
 
 func PostgresBulkInsert() (string, []any) {
 	dialect := goqu.Dialect("postgres")
-	sql, args, err := dialect.Insert("user").
+	sql, args, err := dialect.Insert("users").
 		Cols("first_name", "last_name").
 		Vals(
 			goqu.Vals{"Greg", "Farley"},

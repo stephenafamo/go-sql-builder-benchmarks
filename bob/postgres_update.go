@@ -1,18 +1,17 @@
-package typesql
+package bob
 
 import (
-	"github.com/stephenafamo/typesql/dialect/psql"
-	"github.com/stephenafamo/typesql/query"
+	"github.com/stephenafamo/bob/dialect/psql"
 )
 
 func PostgresSimpleUpdate() (string, []any) {
 	qm := psql.UpdateQM{}
-	sql, args, err := query.Build(psql.Update(
+
+	sql, args, err := psql.Update(
 		qm.Table("items"),
 		qm.SetArg("name", "test"),
 		qm.SetArg("address", "111 Test Addr"),
-	))
-
+	).Build()
 	if err != nil {
 		panic(err)
 	}

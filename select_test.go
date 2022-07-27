@@ -3,19 +3,21 @@ package main
 import (
 	"testing"
 
+	"github.com/stephenafamo/sqlbuilderbenchmarks/bob"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/goqu"
+	"github.com/stephenafamo/sqlbuilderbenchmarks/sq"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/squirrel"
-	"github.com/stephenafamo/sqlbuilderbenchmarks/typesql"
 )
 
 func BenchmarkPostgresSimpleSelect(bUp *testing.B) {
-	for name, Func := range map[string]benchFunc{
-		"typesql":  typesql.PostgresSimpleSelect,
-		"squirrel": squirrel.PostgresSimpleSelect,
-		"goqu":     goqu.PostgresSimpleSelect,
+	for _, x := range []benchset{
+		{name: "bob", f: bob.PostgresSimpleSelect},
+		{name: "goqu", f: goqu.PostgresSimpleSelect},
+		{name: "sq", f: sq.PostgresSimpleSelect},
+		{name: "squirrel", f: squirrel.PostgresSimpleSelect},
 	} {
-		bUp.Run(name, func(b *testing.B) {
-			bench(b, Func)
+		bUp.Run(x.name, func(b *testing.B) {
+			bench(b, x.f)
 		})
 	}
 }

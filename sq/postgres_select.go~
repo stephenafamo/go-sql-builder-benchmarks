@@ -1,9 +1,8 @@
-package typesql
+package bob
 
 import (
-	"github.com/stephenafamo/typesql/dialect/psql"
-	"github.com/stephenafamo/typesql/expr"
-	"github.com/stephenafamo/typesql/query"
+	"github.com/stephenafamo/bob/dialect/psql"
+	"github.com/stephenafamo/bob/query"
 )
 
 func PostgresSimpleSelect() (string, []any) {
@@ -11,7 +10,7 @@ func PostgresSimpleSelect() (string, []any) {
 	sql, args, err := query.Build(psql.Select(
 		qm.Select("id", "name"),
 		qm.From("users"),
-		qm.Where(expr.IN("id", expr.Arg(100, 200, 300))),
+		qm.Where(qm.X("id").IN(qm.Arg(100, 200, 300))),
 	))
 	if err != nil {
 		panic(err)
