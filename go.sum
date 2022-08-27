@@ -32,6 +32,12 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stephenafamo/bob v0.0.0-20220727224403-8b570ea71d03 h1:oR01O/ppro66aGbEDAkUkf+BXlDLrbJPHZVGV/X21yo=
 github.com/stephenafamo/bob v0.0.0-20220727224403-8b570ea71d03/go.mod h1:xPqT/S7BQB6SacCPlpkTElTV8jmMMEfOcSAwZMY7H0E=
+github.com/stephenafamo/bob v0.2.3 h1:fver2CXciL/nuUGtbiIWz8Dp4nxU3t6zDUUe4G6jsZw=
+github.com/stephenafamo/bob v0.2.3/go.mod h1:4e+PUkaEDG5mCNps3tbivz5Aj1iQnq1Re+6/XPHAn3c=
+github.com/stephenafamo/bob v0.3.0 h1:B4qPwW9Q1Bx3tmFE+4OPyHFlznTGcH1rqMBroMxwCBg=
+github.com/stephenafamo/bob v0.3.0/go.mod h1:4e+PUkaEDG5mCNps3tbivz5Aj1iQnq1Re+6/XPHAn3c=
+github.com/stephenafamo/scan v0.0.0-20220823015844-2c015f21af46 h1:EG6y3WxTvRIqlvU4yNWVU10mAwiYf+IOfgXNIfZaBZ0=
+github.com/stephenafamo/scan v0.0.0-20220823015844-2c015f21af46/go.mod h1:jzTuAw6fanK9SKgNYem8LIAUMq4AcwKxkWSf10bPyq4=
 github.com/stretchr/objx v0.1.0 h1:4G4v2dO3VZwixGIRoQ5Lfboy6nUhCyYzaqnIAPPhYs4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=

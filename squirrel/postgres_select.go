@@ -8,7 +8,6 @@ func PostgresSimpleSelect() (string, []any) {
 		From("users").
 		Where("id IN (?,?,?)", 100, 200, 300).
 		ToSql()
-
 	if err != nil {
 		panic(err)
 	}

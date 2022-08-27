@@ -9,14 +9,13 @@ import (
 
 func PostgresBulkInsert() (string, []any) {
 	t := sq.New[users]("")
-	q := sq.
-		InsertInto(t).
+	q := sq.InsertInto(t).
 		Columns(t.FirstName, t.LastName).
 		Values("Greg", "Farley").
 		Values("Jimmy", "Stewart").
 		Values("Jeff", "Jeffers")
 
-	var buf = bytes.NewBuffer(nil)
+	buf := bytes.NewBuffer(nil)
 	var args []any
 
 	err := q.WriteSQL(context.Background(), sq.DialectPostgres, buf, &args, nil)

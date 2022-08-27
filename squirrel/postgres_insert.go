@@ -10,7 +10,6 @@ func PostgresBulkInsert() (string, []any) {
 		Values("Jimmy", "Stewart").
 		Values("Jeff", "Jeffers").
 		ToSql()
-
 	if err != nil {
 		panic(err)
 	}

@@ -8,7 +8,6 @@ func PostgresSimpleUpdate() (string, []any) {
 		Set("name", "test").
 		Set("address", "111 Test Addr").
 		ToSql()
-
 	if err != nil {
 		panic(err)
 	}

@@ -2,11 +2,10 @@ package bob
 
 import (
 	"github.com/stephenafamo/bob/dialect/psql"
+	"github.com/stephenafamo/bob/dialect/psql/insert/qm"
 )
 
 func PostgresBulkInsert() (string, []any) {
-	qm := psql.InsertQM{}
-
 	sql, args, err := psql.Insert(
 		qm.Into("users", "first_name", "last_name"),
 		qm.Values(psql.Arg("Greg", "Farley")),

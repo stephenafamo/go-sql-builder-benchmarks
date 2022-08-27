@@ -13,7 +13,6 @@ func PostgresSimpleSelect() (string, []any) {
 		Where(goqu.Ex{"id": []int{100, 200, 300}}).
 		Prepared(true).
 		ToSQL()
-
 	if err != nil {
 		panic(err)
 	}

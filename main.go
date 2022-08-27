@@ -11,7 +11,7 @@ import (
 )
 
 func Print(sql string, args []any) {
-	fmt.Printf("Query: %s\nArgs: %#v\n\n", strings.TrimSpace(sql), args)
+	fmt.Printf("Query: %s\nArgs: %#v\n", strings.TrimSpace(sql), args)
 }
 
 func main() {
@@ -20,46 +20,53 @@ func main() {
 	PostgresSimpleUpdate()
 	fmt.Printf("\n\n")
 	PostgresBulkInsert()
+	fmt.Printf("\n\n")
 }
 
 func PostgresSimpleSelect() {
-	fmt.Println("---Bob---")
+	fmt.Printf("### Simple Select\n\n```sql")
+	fmt.Println("\n---Bob---")
 	Print(bob.PostgresSimpleSelect())
 
-	fmt.Println("---Goqu---")
+	fmt.Println("\n---Goqu---")
 	Print(goqu.PostgresSimpleSelect())
 
-	fmt.Println("---Sq---")
+	fmt.Println("\n---Sq---")
 	Print(sq.PostgresSimpleSelect())
 
-	fmt.Println("---Squirrel---")
+	fmt.Println("\n---Squirrel---")
 	Print(squirrel.PostgresSimpleSelect())
+	fmt.Printf("```")
 }
 
 func PostgresBulkInsert() {
-	fmt.Println("---Bob---")
+	fmt.Printf("### Bulk Insert\n\n```sql")
+	fmt.Println("\n---Bob---")
 	Print(bob.PostgresBulkInsert())
 
-	fmt.Println("---Goqu---")
+	fmt.Println("\n---Goqu---")
 	Print(goqu.PostgresBulkInsert())
 
-	fmt.Println("---Sq---")
+	fmt.Println("\n---Sq---")
 	Print(sq.PostgresBulkInsert())
 
-	fmt.Println("---Squirrel---")
+	fmt.Println("\n---Squirrel---")
 	Print(squirrel.PostgresBulkInsert())
+	fmt.Printf("```")
 }
 
 func PostgresSimpleUpdate() {
-	fmt.Println("---Bob---")
+	fmt.Printf("### Simple Update\n\n```sql")
+	fmt.Println("\n---Bob---")
 	Print(bob.PostgresSimpleUpdate())
 
-	fmt.Println("---Goqu---")
+	fmt.Println("\n---Goqu---")
 	Print(goqu.PostgresSimpleUpdate())
 
-	fmt.Println("---Sq---")
+	fmt.Println("\n---Sq---")
 	Print(sq.PostgresSimpleUpdate())
 
-	fmt.Println("---Squirrel---")
+	fmt.Println("\n---Squirrel---")
 	Print(squirrel.PostgresSimpleUpdate())
+	fmt.Printf("```")
 }

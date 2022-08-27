@@ -15,7 +15,6 @@ func PostgresSimpleUpdate() (string, []any) {
 		}).
 		Prepared(true).
 		ToSQL()
-
 	if err != nil {
 		panic(err)
 	}

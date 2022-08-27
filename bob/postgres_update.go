@@ -2,11 +2,10 @@ package bob
 
 import (
 	"github.com/stephenafamo/bob/dialect/psql"
+	"github.com/stephenafamo/bob/dialect/psql/update/qm"
 )
 
 func PostgresSimpleUpdate() (string, []any) {
-	qm := psql.UpdateQM{}
-
 	sql, args, err := psql.Update(
 		qm.Table("items"),
 		qm.SetArg("name", "test"),

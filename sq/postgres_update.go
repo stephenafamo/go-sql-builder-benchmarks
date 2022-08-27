@@ -9,12 +9,11 @@ import (
 
 func PostgresSimpleUpdate() (string, []any) {
 	t := sq.New[items]("")
-	q := sq.
-		Update(t).
+	q := sq.Update(t).
 		Set(t.Name.SetString("test")).
 		Set(t.Address.SetString("111 Test Addr"))
 
-	var buf = bytes.NewBuffer(nil)
+	buf := bytes.NewBuffer(nil)
 	var args []any
 
 	err := q.WriteSQL(context.Background(), sq.DialectPostgres, buf, &args, nil)
