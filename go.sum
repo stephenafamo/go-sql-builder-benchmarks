@@ -2,8 +2,14 @@ github.com/DATA-DOG/go-sqlmock v1.5.0 h1:Shsta01QNfFxHCfpW6YH2STWB0MudeXXEWMr20O
 github.com/DATA-DOG/go-sqlmock v1.5.0/go.mod h1:f/Ixk793poVmq4qj/V1dPUg2JEAKC73Q5eFN3EC/SaM=
 github.com/Masterminds/squirrel v1.5.3 h1:YPpoceAcxuzIljlr5iWpNKaql7hLeG1KLSrhvdHpkZc=
 github.com/Masterminds/squirrel v1.5.3/go.mod h1:NNaOrjSoIDfDA40n7sr2tPNZRfjzjA400rg+riTZj10=
+github.com/aarondl/json v0.0.0-20221020222930-8b0db17ef1bf h1:+edM69bH/X6JpYPmJYBRLanAMe1V5yRXYU3hHUovGcE=
+github.com/aarondl/json v0.0.0-20221020222930-8b0db17ef1bf/go.mod h1:FZqLhJSj2tg0ZN48GB1zvj00+ZYcHPqgsC7yzcgCq6k=
+github.com/aarondl/opt v0.0.0-20221129170750-3d40c96d9bb8 h1:pAJut2Ye6sxwIS8zQvu1BhX87B+9MwUKmzjdEkwPWg4=
+github.com/aarondl/opt v0.0.0-20221129170750-3d40c96d9bb8/go.mod h1:l4/5NZtYd/SIohsFhaJQQe+sPOTG22furpZ5FvcYOzk=
 github.com/bokwoon95/sq v0.1.0 h1:Qpcog2GrldB1nbIcBxOCT2D46PvefySan4yfpxwIV5Q=
 github.com/bokwoon95/sq v0.1.0/go.mod h1:35Vd+coLXFFPJHL6g+EJBLWKystTd3LBoF96ftC4ZrU=
+github.com/bokwoon95/sq v0.2.0 h1:JzffSXecfnwkrXc7cqeG/hj7boZHjXRGaQL+nYFzZng=
+github.com/bokwoon95/sq v0.2.0/go.mod h1:35Vd+coLXFFPJHL6g+EJBLWKystTd3LBoF96ftC4ZrU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -36,8 +42,12 @@ github.com/stephenafamo/bob v0.2.3 h1:fver2CXciL/nuUGtbiIWz8Dp4nxU3t6zDUUe4G6jsZ
 github.com/stephenafamo/bob v0.2.3/go.mod h1:4e+PUkaEDG5mCNps3tbivz5Aj1iQnq1Re+6/XPHAn3c=
 github.com/stephenafamo/bob v0.3.0 h1:B4qPwW9Q1Bx3tmFE+4OPyHFlznTGcH1rqMBroMxwCBg=
 github.com/stephenafamo/bob v0.3.0/go.mod h1:4e+PUkaEDG5mCNps3tbivz5Aj1iQnq1Re+6/XPHAn3c=
+github.com/stephenafamo/bob v0.14.0 h1:9PtMsnWBqy9tB9NwfpXNSFhSqvyDwmiqz76YEIgyCuk=
+github.com/stephenafamo/bob v0.14.0/go.mod h1:AwKVF4hsXfV6spE+fZUemmj8vdCUvBXBikMF+Yi0J54=
 github.com/stephenafamo/scan v0.0.0-20220823015844-2c015f21af46 h1:EG6y3WxTvRIqlvU4yNWVU10mAwiYf+IOfgXNIfZaBZ0=
 github.com/stephenafamo/scan v0.0.0-20220823015844-2c015f21af46/go.mod h1:jzTuAw6fanK9SKgNYem8LIAUMq4AcwKxkWSf10bPyq4=
+github.com/stephenafamo/scan v0.1.2-0.20221227214649-97519a3ab86f h1:uJwn6s/ZcHCloM/slAcw18aRB3JAkv4p+BiEWoh9Gtw=
+github.com/stephenafamo/scan v0.1.2-0.20221227214649-97519a3ab86f/go.mod h1:lWFwq4xmsQ6E5wR6KvO8SWBalb4ESRihqvffGcPFKOo=
 github.com/stretchr/objx v0.1.0 h1:4G4v2dO3VZwixGIRoQ5Lfboy6nUhCyYzaqnIAPPhYs4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
