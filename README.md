@@ -24,7 +24,7 @@ go run .
 
 Kindly send in PRs with new query builders or queries to benchmark.
 
-## Full results: 2022-07-28
+## Full results: 2023-02-26
 
 ```sh
 goos: darwin
