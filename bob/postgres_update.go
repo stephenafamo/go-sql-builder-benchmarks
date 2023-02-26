@@ -2,14 +2,14 @@ package bob
 
 import (
 	"github.com/stephenafamo/bob/dialect/psql"
-	"github.com/stephenafamo/bob/dialect/psql/update/qm"
+	"github.com/stephenafamo/bob/dialect/psql/um"
 )
 
 func PostgresSimpleUpdate() (string, []any) {
 	sql, args, err := psql.Update(
-		qm.Table("items"),
-		qm.SetArg("name", "test"),
-		qm.SetArg("address", "111 Test Addr"),
+		um.Table("items"),
+		um.SetArg("name", "test"),
+		um.SetArg("address", "111 Test Addr"),
 	).Build()
 	if err != nil {
 		panic(err)

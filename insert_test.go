@@ -5,6 +5,7 @@ import (
 
 	"github.com/stephenafamo/sqlbuilderbenchmarks/bob"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/goqu"
+	"github.com/stephenafamo/sqlbuilderbenchmarks/huandu"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/sq"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/squirrel"
 )
@@ -15,6 +16,7 @@ func BenchmarkPostgresBulkInsert(bUp *testing.B) {
 		{name: "goqu", f: goqu.PostgresBulkInsert},
 		{name: "sq", f: sq.PostgresBulkInsert},
 		{name: "squirrel", f: squirrel.PostgresBulkInsert},
+		{name: "huandu", f: huandu.PostgresBulkInsert},
 	} {
 		bUp.Run(x.name, func(b *testing.B) {
 			bench(b, x.f)

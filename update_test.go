@@ -5,6 +5,7 @@ import (
 
 	"github.com/stephenafamo/sqlbuilderbenchmarks/bob"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/goqu"
+	"github.com/stephenafamo/sqlbuilderbenchmarks/huandu"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/sq"
 	"github.com/stephenafamo/sqlbuilderbenchmarks/squirrel"
 )
@@ -15,6 +16,7 @@ func BenchmarkPostgresSimpleUpdate(bUp *testing.B) {
 		{name: "goqu", f: goqu.PostgresSimpleUpdate},
 		{name: "sq", f: sq.PostgresSimpleUpdate},
 		{name: "squirrel", f: squirrel.PostgresSimpleUpdate},
+		{name: "huandu", f: huandu.PostgresSimpleUpdate},
 	} {
 		bUp.Run(x.name, func(b *testing.B) {
 			bench(b, x.f)

@@ -36,6 +36,9 @@ func PostgresSimpleSelect() {
 
 	fmt.Println("\n---Squirrel---")
 	Print(squirrel.PostgresSimpleSelect())
+
+	fmt.Println("\n---Huandu---")
+	Print(squirrel.PostgresSimpleSelect())
 	fmt.Printf("```")
 }
 
@@ -52,6 +55,9 @@ func PostgresBulkInsert() {
 
 	fmt.Println("\n---Squirrel---")
 	Print(squirrel.PostgresBulkInsert())
+
+	fmt.Println("\n---Huandu---")
+	Print(squirrel.PostgresBulkInsert())
 	fmt.Printf("```")
 }
 
@@ -67,6 +73,9 @@ func PostgresSimpleUpdate() {
 	Print(sq.PostgresSimpleUpdate())
 
 	fmt.Println("\n---Squirrel---")
+	Print(squirrel.PostgresSimpleUpdate())
+
+	fmt.Println("\n---Huandu---")
 	Print(squirrel.PostgresSimpleUpdate())
 	fmt.Printf("```")
 }
