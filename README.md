@@ -18,6 +18,7 @@ go run .
 * [Goqu](https://github.com/doug-martin/goqu)
 * [Sq](https://github.com/bokwoon95/sq)
 * [Squirrel](https://github.com/Masterminds/squirrel)
+* [Huandu](https://github.com/huandu/go-sqlbuilder)
 
 ## Help improve this
 
