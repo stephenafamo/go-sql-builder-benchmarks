@@ -24,7 +24,7 @@ go run .
 
 Kindly send in PRs with new query builders or queries to benchmark.
 
-## Full results: 2023-02-26
+## Full results: 2023-08-05
 
 ```sh
 goos: darwin
@@ -32,69 +32,69 @@ goarch: arm64
 pkg: github.com/stephenafamo/sqlbuilderbenchmarks
 BenchmarkPostgresBulkInsert
 BenchmarkPostgresBulkInsert/bob
-BenchmarkPostgresBulkInsert/bob   	  574155	      2050 ns/op	    2320 B/op	      77 allocs/op
-BenchmarkPostgresBulkInsert/bob-2 	  630021	      1830 ns/op	    2320 B/op	      77 allocs/op
-BenchmarkPostgresBulkInsert/bob-4 	  642820	      1835 ns/op	    2320 B/op	      77 allocs/op
+BenchmarkPostgresBulkInsert/bob   	  605054	      1955 ns/op	    2288 B/op	      67 allocs/op
+BenchmarkPostgresBulkInsert/bob-2 	  676304	      1744 ns/op	    2288 B/op	      67 allocs/op
+BenchmarkPostgresBulkInsert/bob-4 	  685435	      1801 ns/op	    2288 B/op	      67 allocs/op
 BenchmarkPostgresBulkInsert/goqu
-BenchmarkPostgresBulkInsert/goqu           	  477339	      2607 ns/op	    2912 B/op	      82 allocs/op
-BenchmarkPostgresBulkInsert/goqu-2         	  501019	      2317 ns/op	    2912 B/op	      82 allocs/op
-BenchmarkPostgresBulkInsert/goqu-4         	  508168	      2317 ns/op	    2912 B/op	      82 allocs/op
+BenchmarkPostgresBulkInsert/goqu           	  425469	      2701 ns/op	    2912 B/op	      82 allocs/op
+BenchmarkPostgresBulkInsert/goqu-2         	  441964	      3115 ns/op	    2912 B/op	      82 allocs/op
+BenchmarkPostgresBulkInsert/goqu-4         	  511267	      2344 ns/op	    2912 B/op	      82 allocs/op
 BenchmarkPostgresBulkInsert/sq
-BenchmarkPostgresBulkInsert/sq             	  514275	      2384 ns/op	    3264 B/op	      41 allocs/op
-BenchmarkPostgresBulkInsert/sq-2           	  565558	      2056 ns/op	    3264 B/op	      41 allocs/op
-BenchmarkPostgresBulkInsert/sq-4           	  574106	      2060 ns/op	    3264 B/op	      41 allocs/op
+BenchmarkPostgresBulkInsert/sq             	  543387	      2232 ns/op	    3264 B/op	      41 allocs/op
+BenchmarkPostgresBulkInsert/sq-2           	  607789	      1928 ns/op	    3264 B/op	      41 allocs/op
+BenchmarkPostgresBulkInsert/sq-4           	  595689	      1944 ns/op	    3264 B/op	      41 allocs/op
 BenchmarkPostgresBulkInsert/squirrel
-BenchmarkPostgresBulkInsert/squirrel       	  213913	      5763 ns/op	    4376 B/op	     106 allocs/op
-BenchmarkPostgresBulkInsert/squirrel-2     	  232371	      5000 ns/op	    4376 B/op	     106 allocs/op
-BenchmarkPostgresBulkInsert/squirrel-4     	  234081	      4976 ns/op	    4376 B/op	     106 allocs/op
+BenchmarkPostgresBulkInsert/squirrel       	  216866	      5688 ns/op	    4376 B/op	     106 allocs/op
+BenchmarkPostgresBulkInsert/squirrel-2     	  242967	      4818 ns/op	    4376 B/op	     106 allocs/op
+BenchmarkPostgresBulkInsert/squirrel-4     	  243682	      4795 ns/op	    4376 B/op	     106 allocs/op
 BenchmarkPostgresBulkInsert/huandu
-BenchmarkPostgresBulkInsert/huandu         	  705835	      1882 ns/op	    1688 B/op	      37 allocs/op
-BenchmarkPostgresBulkInsert/huandu-2       	  747028	      1574 ns/op	    1688 B/op	      37 allocs/op
-BenchmarkPostgresBulkInsert/huandu-4       	  748208	      1580 ns/op	    1688 B/op	      37 allocs/op
+BenchmarkPostgresBulkInsert/huandu         	  702351	      1905 ns/op	    1576 B/op	      39 allocs/op
+BenchmarkPostgresBulkInsert/huandu-2       	  757645	      1584 ns/op	    1576 B/op	      39 allocs/op
+BenchmarkPostgresBulkInsert/huandu-4       	  706246	      1563 ns/op	    1576 B/op	      39 allocs/op
 BenchmarkPostgresSimpleSelect
 BenchmarkPostgresSimpleSelect/bob
-BenchmarkPostgresSimpleSelect/bob          	  684865	      1811 ns/op	    1968 B/op	      58 allocs/op
-BenchmarkPostgresSimpleSelect/bob-2        	  720649	      1618 ns/op	    1968 B/op	      58 allocs/op
-BenchmarkPostgresSimpleSelect/bob-4        	  728940	      1619 ns/op	    1968 B/op	      58 allocs/op
+BenchmarkPostgresSimpleSelect/bob          	  635319	      1939 ns/op	    2176 B/op	      60 allocs/op
+BenchmarkPostgresSimpleSelect/bob-2        	  680466	      1747 ns/op	    2176 B/op	      60 allocs/op
+BenchmarkPostgresSimpleSelect/bob-4        	  681163	      1727 ns/op	    2176 B/op	      60 allocs/op
 BenchmarkPostgresSimpleSelect/goqu
-BenchmarkPostgresSimpleSelect/goqu         	  371544	      3148 ns/op	    3488 B/op	      87 allocs/op
-BenchmarkPostgresSimpleSelect/goqu-2       	  407264	      2794 ns/op	    3488 B/op	      87 allocs/op
-BenchmarkPostgresSimpleSelect/goqu-4       	  409846	      2793 ns/op	    3488 B/op	      87 allocs/op
+BenchmarkPostgresSimpleSelect/goqu         	  375877	      3134 ns/op	    3488 B/op	      87 allocs/op
+BenchmarkPostgresSimpleSelect/goqu-2       	  407896	      2821 ns/op	    3488 B/op	      87 allocs/op
+BenchmarkPostgresSimpleSelect/goqu-4       	  410548	      2799 ns/op	    3488 B/op	      87 allocs/op
 BenchmarkPostgresSimpleSelect/sq
-BenchmarkPostgresSimpleSelect/sq           	  501062	      2462 ns/op	    2984 B/op	      43 allocs/op
-BenchmarkPostgresSimpleSelect/sq-2         	  536715	      2171 ns/op	    2984 B/op	      43 allocs/op
-BenchmarkPostgresSimpleSelect/sq-4         	  543694	      2184 ns/op	    2984 B/op	      43 allocs/op
+BenchmarkPostgresSimpleSelect/sq           	  534285	      2275 ns/op	    2984 B/op	      43 allocs/op
+BenchmarkPostgresSimpleSelect/sq-2         	  587409	      1989 ns/op	    2984 B/op	      43 allocs/op
+BenchmarkPostgresSimpleSelect/sq-4         	  593128	      1987 ns/op	    2984 B/op	      43 allocs/op
 BenchmarkPostgresSimpleSelect/squirrel
-BenchmarkPostgresSimpleSelect/squirrel     	  332554	      3666 ns/op	    2776 B/op	      61 allocs/op
-BenchmarkPostgresSimpleSelect/squirrel-2   	  368530	      3232 ns/op	    2776 B/op	      61 allocs/op
-BenchmarkPostgresSimpleSelect/squirrel-4   	  357468	      3233 ns/op	    2776 B/op	      61 allocs/op
+BenchmarkPostgresSimpleSelect/squirrel     	  343189	      3546 ns/op	    2776 B/op	      61 allocs/op
+BenchmarkPostgresSimpleSelect/squirrel-2   	  375693	      3111 ns/op	    2776 B/op	      61 allocs/op
+BenchmarkPostgresSimpleSelect/squirrel-4   	  376072	      3090 ns/op	    2776 B/op	      61 allocs/op
 BenchmarkPostgresSimpleSelect/huandu
-BenchmarkPostgresSimpleSelect/huandu       	 1000000	      1002 ns/op	     840 B/op	      23 allocs/op
-BenchmarkPostgresSimpleSelect/huandu-2     	 1394989	       861.5 ns/op	     840 B/op	      23 allocs/op
-BenchmarkPostgresSimpleSelect/huandu-4     	 1391994	       859.4 ns/op	     840 B/op	      23 allocs/op
+BenchmarkPostgresSimpleSelect/huandu       	 1201245	       998.2 ns/op	     816 B/op	      25 allocs/op
+BenchmarkPostgresSimpleSelect/huandu-2     	 1429120	       838.8 ns/op	     816 B/op	      25 allocs/op
+BenchmarkPostgresSimpleSelect/huandu-4     	 1420030	       840.3 ns/op	     816 B/op	      25 allocs/op
 BenchmarkPostgresSimpleUpdate
 BenchmarkPostgresSimpleUpdate/bob
-BenchmarkPostgresSimpleUpdate/bob          	  809067	      1580 ns/op	    1520 B/op	      50 allocs/op
-BenchmarkPostgresSimpleUpdate/bob-2        	  851959	      1386 ns/op	    1520 B/op	      50 allocs/op
-BenchmarkPostgresSimpleUpdate/bob-4        	  843014	      1384 ns/op	    1520 B/op	      50 allocs/op
+BenchmarkPostgresSimpleUpdate/bob          	  864763	      1478 ns/op	    1456 B/op	      42 allocs/op
+BenchmarkPostgresSimpleUpdate/bob-2        	  914834	      1283 ns/op	    1456 B/op	      42 allocs/op
+BenchmarkPostgresSimpleUpdate/bob-4        	  914828	      1283 ns/op	    1456 B/op	      42 allocs/op
 BenchmarkPostgresSimpleUpdate/goqu
-BenchmarkPostgresSimpleUpdate/goqu         	  571532	      2170 ns/op	    2192 B/op	      57 allocs/op
-BenchmarkPostgresSimpleUpdate/goqu-2       	  609662	      1918 ns/op	    2192 B/op	      57 allocs/op
-BenchmarkPostgresSimpleUpdate/goqu-4       	  621321	      1915 ns/op	    2192 B/op	      57 allocs/op
+BenchmarkPostgresSimpleUpdate/goqu         	  575066	      2159 ns/op	    2192 B/op	      57 allocs/op
+BenchmarkPostgresSimpleUpdate/goqu-2       	  611200	      1928 ns/op	    2192 B/op	      57 allocs/op
+BenchmarkPostgresSimpleUpdate/goqu-4       	  620728	      1906 ns/op	    2192 B/op	      57 allocs/op
 BenchmarkPostgresSimpleUpdate/sq
-BenchmarkPostgresSimpleUpdate/sq           	  805285	      1554 ns/op	    1920 B/op	      29 allocs/op
-BenchmarkPostgresSimpleUpdate/sq-2         	  859828	      1376 ns/op	    1920 B/op	      29 allocs/op
-BenchmarkPostgresSimpleUpdate/sq-4         	  886830	      1366 ns/op	    1920 B/op	      29 allocs/op
+BenchmarkPostgresSimpleUpdate/sq           	  875047	      1425 ns/op	    1920 B/op	      29 allocs/op
+BenchmarkPostgresSimpleUpdate/sq-2         	  943785	      1242 ns/op	    1920 B/op	      29 allocs/op
+BenchmarkPostgresSimpleUpdate/sq-4         	  944354	      1235 ns/op	    1920 B/op	      29 allocs/op
 BenchmarkPostgresSimpleUpdate/squirrel
-BenchmarkPostgresSimpleUpdate/squirrel     	  369390	      3370 ns/op	    2616 B/op	      62 allocs/op
-BenchmarkPostgresSimpleUpdate/squirrel-2   	  397760	      2907 ns/op	    2616 B/op	      62 allocs/op
-BenchmarkPostgresSimpleUpdate/squirrel-4   	  400417	      2908 ns/op	    2616 B/op	      62 allocs/op
+BenchmarkPostgresSimpleUpdate/squirrel     	  392042	      3260 ns/op	    2648 B/op	      62 allocs/op
+BenchmarkPostgresSimpleUpdate/squirrel-2   	  418280	      2784 ns/op	    2648 B/op	      62 allocs/op
+BenchmarkPostgresSimpleUpdate/squirrel-4   	  416548	      2766 ns/op	    2648 B/op	      62 allocs/op
 BenchmarkPostgresSimpleUpdate/huandu
-BenchmarkPostgresSimpleUpdate/huandu       	 5548072	       215.8 ns/op	     360 B/op	       8 allocs/op
-BenchmarkPostgresSimpleUpdate/huandu-2     	 5880306	       202.5 ns/op	     360 B/op	       8 allocs/op
-BenchmarkPostgresSimpleUpdate/huandu-4     	 5894546	       202.3 ns/op	     360 B/op	       8 allocs/op
+BenchmarkPostgresSimpleUpdate/huandu       	 6102924	       196.3 ns/op	     200 B/op	       8 allocs/op
+BenchmarkPostgresSimpleUpdate/huandu-2     	 6643478	       183.3 ns/op	     200 B/op	       8 allocs/op
+BenchmarkPostgresSimpleUpdate/huandu-4     	 6638896	       180.4 ns/op	     200 B/op	       8 allocs/op
 PASS
-ok  	github.com/stephenafamo/sqlbuilderbenchmarks	57.843s
+ok  	github.com/stephenafamo/sqlbuilderbenchmarks	60.960s
 ```
 
 ## Queries
@@ -106,7 +106,7 @@ ok  	github.com/stephenafamo/sqlbuilderbenchmarks	57.843s
 Query: SELECT
 id, name
 FROM users
-WHERE (id IN ($1, $2, $3))
+WHERE ("id" IN ($1, $2, $3))
 Args: []interface {}{100, 200, 300}
 
 ---Goqu---

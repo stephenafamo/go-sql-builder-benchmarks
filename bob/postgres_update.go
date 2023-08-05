@@ -8,8 +8,8 @@ import (
 func PostgresSimpleUpdate() (string, []any) {
 	sql, args, err := psql.Update(
 		um.Table("items"),
-		um.SetArg("name", "test"),
-		um.SetArg("address", "111 Test Addr"),
+		um.Set("name").ToArg("test"),
+		um.Set("address").ToArg("111 Test Addr"),
 	).Build()
 	if err != nil {
 		panic(err)
